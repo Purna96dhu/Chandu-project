@@ -1,17 +1,14 @@
 
 
 function sidebar(){
-    return (
-        <>
-            <ul>
-                <li>Dashboard</li>
-                <li>Profile</li>
-                <li>Settings</li>
-                <li>Reports</li>
-                <li>Logout</li>
-            </ul>
-        </>
-    )
+     return (
+    <ul className="space-y-3">
+      <li className="hover:text-blue-500 cursor-pointer">Dashboard</li>
+      <li className="hover:text-blue-500 cursor-pointer">Profile</li>
+      <li className="hover:text-blue-500 cursor-pointer">Settings</li>
+      <li className="hover:text-blue-500 cursor-pointer">Reports</li>
+    </ul>
+  );
 
 }
 
