@@ -3,7 +3,13 @@ import Topbar from "./Topbar";
 import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 
-function Layout({ children }) {
+import { type ReactNode } from "react";
+
+type LayoutProps = {
+  children: ReactNode;
+};
+
+function Layout({ children }: LayoutProps) {
   return (
     <div className="flex flex-col h-screen">
 

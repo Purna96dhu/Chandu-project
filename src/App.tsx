@@ -1,4 +1,5 @@
 
+import Hero from './Hero'
 import Layout from './Layout'
 
 
@@ -6,7 +7,10 @@ function App() {
   
   return (
     <>
-      <Layout></Layout>
+      <Layout>
+
+        <Hero/>
+      </Layout>
       
     </>
   )

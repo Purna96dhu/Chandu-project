@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [react(),tailwindcss()],
   server:{
     host:true,
-    allowedHosts:['pure-calculator-counts-ids.trycloudflare.com']
+    allowedHosts:['revenues-derek-names-wages.trycloudflare.com']
   }
 })
