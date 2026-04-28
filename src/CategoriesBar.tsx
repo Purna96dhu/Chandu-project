@@ -5,7 +5,7 @@ type Props = {
 
 function CategoriesBar({ toggleSidebar, setCategory }: Props) {
   const menu = {
-    Electronics: ["Cricket Bats", "Laptops", "Headphones"],
+    Sports: ["Cricket Bats", "Cricket Balls", "Stumps"],
     Fashion: ["Men", "Women", "Kids"],
     Home: ["Furniture", "Decor", "Kitchen"],
   };
