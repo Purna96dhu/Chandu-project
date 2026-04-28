@@ -7,6 +7,6 @@ export default defineConfig({
   plugins: [react(),tailwindcss()],
   server:{
     host:true,
-    allowedHosts:['revenues-derek-names-wages.trycloudflare.com']
+    allowedHosts:['trance-prague-plaza-gathering.trycloudflare.com']
   }
 })

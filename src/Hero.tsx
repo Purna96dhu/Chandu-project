@@ -1,14 +1,28 @@
-
 import heroImg from "./assets/online-shopping.jpg";
+import { type ReactNode } from "react";
 
-function Hero() {
+type Props = {
+  children?: ReactNode;
+};
+
+function Hero({ children }: Props) {
   return (
-    <div
-      className="w-full h-full bg-cover bg-center relative rounded-xl shadow-lg"
-      style={{ backgroundImage: `url(${heroImg})` }}
-    >
-      {/* Optional Overlay */}
-      
+    <div className="relative w-full min-h-screen">
+
+      {/* BACKGROUND (behind everything) */}
+      <div
+        className="fixed inset-0 -z-10 bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroImg})` }}
+      ></div>
+
+      {/* OVERLAY */}
+      <div className="fixed inset-0 -z-10 bg-black/40"></div>
+
+      {/* CONTENT */}
+      <div className="relative z-10 p-6">
+        {children}
+      </div>
+
     </div>
   );
 }
